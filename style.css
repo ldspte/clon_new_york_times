@@ -6,3 +6,27 @@
 .body{
     background-color: pink;
 }
+
+
+.nav{
+    height: 200px;
+    background-color: black;
+}
+
+
+section{
+    display: grid;
+    grid-template-columns: 1fr, 2fr, 1fr;
+    gap: 20px;
+}
+
+ol{
+    display: block;
+    list-style: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}

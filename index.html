@@ -3,28 +3,1198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The New York Times</title>
+    <title>The New York Times International</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav class="nav">
-        <!-- Barra de Navegacion -->
-
-
-        <div class="info">
-            <!-- Info desplegable -->
+    <header>
+        <div class="uno">
+            <div class="lupa">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="lang">
+                <ul>
+                    <li>U.S.</li>
+                    <li><span>INTERNATIONAL</span></li>
+                    <li>CANADA</li>
+                    <li>ESPAÑOL</li>
+                    <li>中文</li>
+                </ul>
+            </div>  
+            <div class="butt">
+                <button class="sub">SUBSCRIBE FOR $0.25/WEEK</button>        
+                <button class="log">LOG IN</button>
+            </div>
         </div>
-    </nav>
+        <div class="dos">
+            <div class="bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <span id="datetime-display"></span>
+            <script>
+                //Función para poner fecha actual
+                const datetimeDisplayElement = document.getElementById("datetime-display");
 
-    <section>
-  <!-- Escriben aqui todas las noticias -->
+                function displayDateTime() {
+                    const currentDateTime = new Date();
+                    const date = currentDateTime.toDateString();
+                    const time = currentDateTime.toLocaleTimeString();
+                    datetimeDisplayElement.textContent = `${date}`;
+                }
 
+                // Llama la función displayDateTime para actualizar el display automáticamente
+                displayDateTime();
+            </script>
+            <span class="today">Today's Paper</span> 
+            <span class="week">SUBSCRIBE FOR $0.25/WEEK</span>
+            <h1>The New York Times</h1>
+            <div class="login">
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li>
+                    <a href="#">U.S. <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <header><span class="sec">SECTIONS</span></header>
+                                <ul class="mega-links">
+                                    <li><a href="#">U.S.</a></li>
+                                    <li><a href="#">Politics</a></li>
+                                    <li><a href="#">New York</a></li>
+                                    <li><a href="#">California</a></li>
+                                    <li><a href="#">Education</a></li>
+                                    <li><a href="#">Health</a></li>
+                                    <li><a href="#">Obituaries</a></li>
+                                    <li><a href="#">Science</a></li>
+                                    <li><a href="#">Climate</a></li>
+                                    <li><a href="#">Sports</a></li>
+                                    <li><a href="#">Business</a></li>
+                                    <li><a href="#">Tech</a></li>
+                                    <li><a href="#">The Upshot</a></li>
+                                    <li><a href="#">The Magazine</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>U.S. POLITICS</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">2024 Elections</a></li>
+                                    <li><a href="#">Primary Results</a></li>
+                                    <li><a href="#">Supreme Court</a></li>
+                                    <li><a href="#">Congress</a></li>
+                                    <li><a href="#">Biden Administration</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>TOP STORIES</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Trump Investigation</a></li>
+                                    <li><a href="#">Immigration</a></li>
+                                    <li><a href="#">Abortion</a></li>
+                                    <li><a href="#">Campus Protests</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>NEWSLETTERS</header>
+                                <ul class="mega-links">
+                                    <li>
+                                        <span class="sub">The Morning</span> <br>
+                                        Make sense of the day's news <br> and ideas.
+                                    </li>
+                                    <li>
+                                        <span class="sub">The Upshot</span> <br>
+                                        Analysis that explains politics, <br> 
+                                        policy and eeveryday life.
+                                    </li>
+                                    <li><span class="see">See all newsletters</span></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>PODCASTS</header>
+                                <ul class="mega-links">
+                                    <li>
+                                        <span class="sub">The Daily</span> <br>
+                                        The biggest stories of our time, <br>
+                                        in 20 minutes a day.
+                                    </li>
+                                    <li>
+                                        <span class="sub">The Run-Up</span> <br>
+                                        On the campaign trail with <br>
+                                        Astead Herndon.
+                                    </li>
+                                    <li><span class="see">See all podcasts</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">World <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <header><span class="sec">SECTIONS</span></header>
+                                <ul class="mega-links">
+                                    <li><a href="index2.html">World</a></li>
+                                    <li><a href="#">Africa</a></li>
+                                    <li><a href="#">Americas</a></li>
+                                    <li><a href="#">Asia</a></li>
+                                    <li><a href="#">Australia</a></li>
+                                    <li><a href="#">Canada</a></li>
+                                    <li><a href="#">Europe</a></li>
+                                    <li><a href="#">Middle East</a></li>
+                                    <li><a href="#">Science</a></li>
+                                    <li><a href="#">Climate</a></li>
+                                    <li><a href="#">Weather</a></li>
+                                    <li><a href="#">Health</a></li>
+                                    <li><a href="#">Obituaries</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>TOP STORIES</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Israel-Hamas War</a></li>
+                                    <li><a href="#">Russia-Ukraine War</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>NEWSLETTERS</header>
+                                <ul class="mega-links">
+                                    <li>
+                                        <span class="sub">Morning Briefing: Europe</span> <br>
+                                        Get what you need to know to<br>start your day.
+                                    </li>
+                                    <li>
+                                        <span class="sub">The Interpreter</span> <br>
+                                        Original analysis on the week's <br> 
+                                        biggest global stories.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header></header>
+                                <ul class="mega-links">
+                                    <li>
+                                        <span class="sub">Your Places: Global Update</span> <br>
+                                        The latest news for any part of <br>
+                                        The world you select.
+                                    </li>
+                                    <li>
+                                        <span class="sub">Canada Letter</span> <br>
+                                        Backstories and analysis from<br>
+                                        our Canadian correspondents.
+                                    </li>
+                                    <li><span class="see">See all newsletters</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Business <i class="fa-solid fa-angle-down"></i></a></li>
+                <li><a href="#">Arts <i class="fa-solid fa-angle-down"></i></li></a>
+                <li><a href="#">Lifestyle <i class="fa-solid fa-angle-down"></i></li></a>
+                <li><a href="#">Opinion <i class="fa-solid fa-angle-down"></i></li></a>
+                <li><a href="#">Audio <i class="fa-solid fa-angle-down"></i></li></a>
+                <li><a href="#">Games <i class="fa-solid fa-angle-down"></i></li></a>
+                <li><a href="#">Cooking <i class="fa-solid fa-angle-down"></i></li></a>
+                <li><a href="#">Wirecutter <i class="fa-solid fa-angle-down"></i></li></a>
+                <li><a href="#">The Athletic <i class="fa-solid fa-angle-down"></i></li></a>
+            </ul> <hr> <hr>
+        </nav>    
+    </header>
+    <div class="primera">
+        <div class="news">
+            <div class="left-side"> 
+                <div class="new1 raya">
+                    <h2 class="subt">
+                        Cohen Endures Cross-Examination Under the Eyes of Trump's Entourage
+                    </h2>
+                    <p class="parra">
+                        At Donald Trump's trial, Michael Cohen admitted to stealing from the Trump Organization as the former president's supporters packed the courtroom.
+                    </p>
+                    <span class="read">5 MIN READ</span> 
+                </div>
+                <div class="new2 space">
+                    <h3 class="subt one">
+                        Business Leaders See Threat to Economy From Emmanuel Macron’s Opponents
+                    </h3>
+                    <p class="parra">
+                        Executives challenged the policies of the far-right candidate Jordan Bardella and spending plans by a left-wing coalition at a gathering in Paris.
+                    </p>
+                    <span class="read one">4 MIN READ</span>
+                </div> <hr class="hr1">
+                <div class="new3 raya">
+                    <span>ANALYSIS</span>
+                    <h2 class="subt">
+                        For Judge in Trump Documents Case, Unusual Rulings Are Business as Usual
+                    </h2>
+                    <p class="parra">
+                        Judge Aileen Cannon has repeatedly proved willing to hear out even far-fetched arguments from former President Trump’s legal team.
+                    </p>
+                    <span class="read">5 MIN READ</span> 
+                </div>
+                <div class="new4">
+                    <h2 class="subt">
+                        Judge in Trump Documents Case Rejected Suggestions to Step Aside
+                    </h2>
+                    <p class="parra">
+                        Two judges privately urged Aileen Cannon to decline the case when it was assigned to her, according to people briefed on the matter. She chose to keep it.
+                    </p>
+                    <span class="read">6 MIN READ</span> 
+                </div> <hr class="hr3">
+                <div class="new5 raya">
+                    <h2 class="subt">
+                        Blaming Hamas for Gazans’ Suffering, Many Israelis Feel Little Sympathy
+                    </h2>
+                    <p class="parra">
+                        Despite being aware of the devastation in Gaza, many in Israel ask why they should show pity when, in their view, Palestinians showed none on Oct. 7.
+                    </p>
+                    <span class="read">7 MIN READ</span> 
+                </div>
+                <div class="new6 raya">
+                    <h2 class="subti">
+                        Israel’s military said it would investigate why troops tied a wounded Palestinian to a vehicle.
+                    </h2>
+                    <span class="opinion">See more headlines <span class="number">4+</span></span>
+                </div>
+                <div class="new7">
+                    <h2 class="subti">
+                        A Russian court ordered the arrest of Yulia Navalnaya, Alexei Navalny’s widow.
+                    </h2>
+                    <span class="read">1 MIN READ</span>
+                </div> <hr class="hr5">
+                <div class="new8 raya">
+                    <h2 class="subt">
+                        Parts of the U.S. Have Been Scorching for 7 Days, but the End Is in Sight
+                    </h2>
+                    <p class="parra">
+                        The unusually early heat wave that has gripped much of the United States may let up early this week, forecasters predict.
+                    </p>
+                    <span class="opinion">See more headlines <span class="number">4+</span></span>
+                </div>
+                <div class="new9">
+                    <h2 class="subti">
+                        Spain Takes on France in the Semi-Final of Euro 2024
+                    </h2>
+                    <span class="read">2 MIN READ</span> <hr class="hr2">
+                </div>
+                <div class="new10">
+                    <h2 class="subt">
+                        The U.S. Southern Border, Terrorism Fears and the Arrests of 8 Tajik Men
+                    </h2>
+                    <p class="parra">
+                        The F.B.I. began a nationwide investigation after learning the men might have had ties to ISIS. None have been charged with terrorism-related offenses.
+                    </p>
+                    <span class="read">5 MIN READ</span>
+                </div> <hr class="hr4">
+                <div class="new11 space">
+                    <h2 class="subt">
+                        London’s Kew Gardens Has Long Links to Japan. Now the Emperor Is Set to Visit.
+                    </h2>
+                    <p class="parra">
+                        Emperor Naruhito and his wife, Empress Masako, are touring the famous botanic gardens this week as part of a state visit to Britain.
+                    </p>
+                    <span class="read">4 MIN READ</span>
+                </div> <hr class="hr4">
+                <div class="new12 space">
+                    <h2 class="subt">
+                        Judge Aileen Cannon appeared to all but dismiss a request from Donald Trump’s legal team to suppress evidence from the search of Mar-a-Lago.
+                    </h2>
+                    <p class="parra">
+                        Judge Aileen Cannon appeared to all but dismiss a request from Donald Trump’s legal team to suppress evidence from the search of Mar-a-Lago.
+                    </p>
+                    <span class="read">4 MIN READ</span>
+                </div> <hr class="hr6">
+                <div class="new13 space">
+                    <h2 class="subt">
+                        France’s Far-Right National Rally Rebranded Itself. Here’s How.
+                    </h2>
+                    <p class="parra">
+                        Many considered Marine Le Pen’s party too extreme to achieve power. Now, it could win a parliamentary election — and fill the prime minister’s seat.
+                    </p>
+                    <span class="read">5 MIN READ</span>
+                </div>
+            </div> 
+            <div class="center">
+                <div class="img1 space2">
+                    <img src="img/img1.webp" alt=""> <br>
+                    <span class="creditos">Eduardo Munoz/Reuters</span>  
+                </div> 
+                <div class="img2 space2">
+                    <img src="img/img2.webp" alt=""> <br>
+                    <span class="creditos">The U.S. courthouse where Judge Aileen Cannon’s assignment to handle Donald Trump’s documents case is taking place. Saul Martinez for The New York Times</span>  
+                </div>
+                <div class="img3 space2">
+                    <img src="img/img3.webp" alt=""> <br>
+                    <span class="creditos">Avishag Shaar-Yashuv for The New York Times</span>  
+                </div> 
+                <div class="img4 space2">
+                    <img src="img/img4.webp" alt=""> <br>
+                    <span class="creditos">Bing Guan for The New York Times</span>  
+                </div>
+                <div class="img5 space2">
+                    <img src="img/img5.webp" alt=""> <br>
+                    <span class="creditos">Jordan Vonderhaar for The New York Times</span>  
+                </div>
+                <div class="img6 space2">
+                    <img src="img/img6.webp" alt=""> <br>
+                    <span class="creditos">Andrea DiCenzo for The New York Times</span>  
+                </div>
+                <div class="img7 space2">
+                    <img src="img/img7.webp" alt=""> <br>
+                    <span class="creditos">Justice Department, via Reuters</span>  
+                </div>
+                <div class="img8 space2">
+                    <img src="img/img8.webp" alt=""> <br>
+                    <span class="creditos">Stephane De Sakutin/Agence France-Presse — Getty Images</span>  
+                </div>
+            </div> 
+            <div class="right-side">     
+                <div class="min-new1">
+                    <span class="opinion">Opinion</span> <br>
+                    <span class="name">MICHELLE GOLDBERG</span>
+                    <h3>
+                        Trump’s Allies Say They’ll Enforce the Comstock Act. Believe Them.
+                    </h3>
+                    <span class="read">4 MIN READ</span> <hr class="right-hr">
+                </div>
+                <div class="min-new2">
+                    <div class="r-texto">
+                        <span class="name">MICHAEL LAROSA</span>
+                        <h3>
+                            The Trump Running Mate Who Would Threaten the Blue Wall
+                        </h3>
+                        <span class="read">5 MIN READ</span> <hr class="right-hr2">
+                    </div>
+                    <div class="r-imagen">
+                        <img class="r-img1" src="img/r-img1.webp" alt="">
+                    </div>
+                </div>
+                <div class="min-new3">
+                    <span class="name">ANA MARKS</span>
+                    <h3>
+                        In ‘House of the Dragon,’ a Sapphic Subtext Reigns Supreme
+                    </h3>
+                    <span class="read">2 MIN READ</span> <hr class="right-hr">
+                </div>
+                <div class="min-new4">
+                    <span class="name">JAMELLE BOUIE</span>
+                    <h3>
+                        The Lazy Authoritarianism of Donald Trump
+                    </h3>
+                    <span class="read">4 MIN READ</span> <hr class="right-hr">
+                </div>
+                <div class="min-new5">
+                    <span class="name">MICHAEL WATERS</span>
+                    <h3>
+                        At the Paris Olympics, Sex Testing Will Be in Full Force. How Did We Get Here?
+                    </h3>
+                    <span class="read">7 MIN READ</span> <hr class="right-hr">
+                </div>
+                <div class="min-new6">
+                    <div class="r-texto">
+                        <span class="name">PETER COY</span>
+                        <h3>
+                            Sure, Knowledge Is Power, but Ignorance Is Underrated
+                        </h3>
+                        <span class="read">5 MIN READ</span> <hr class="right-hr2">
+                    </div>
+                    <div class="r-imagen">
+                        <img class="r-img2" src="img/r-img2.webp" alt="">
+                    </div>
+                </div>
+                <div class="min-new7">
+                    <span class="name">DAVID FRENCH</span>
+                    <h3>
+                        Is Missouri About to Execute an Innocent Man?
+                    </h3>
+                    <span class="read">9 MIN READ</span> <hr class="right-hr">
+                </div>
+                <div class="min-new8">
+                    <span class="name">TERRI GERSTEIN</span>
+                    <h3>
+                        Our Laws Aren’t Keeping Up With the Heat
+                    </h3>
+                    <span class="read">4 MIN READ</span> <hr class="right-hr">
+                </div>
+                <div class="r-new1">
+                    <video autoplay loop>
+                        <source src="img/r-video.mp4" type="video/mp4">
+                    </video>
+                    <span class="r-sub">What Does Retirement Really Mean?</span>
+                    <p class="parra r-parra">
+                        We asked readers to submit their stories of retirement — to share their experiences, as well as their advice.
+                    </p>
+                    <span class="read">12 MIN READ</span> <hr class="right-hr">
+                </div>
+                <div class="min-r-new1">
+                    <div class="r-texto">
+                        <span class="opinion">In Case You Missed It</span> <br>
+                        <h3>A Disaster of the U.S. Military’s Own Making</h3>
+                        <span class="read">33 MIN READ</span> <hr class="right-hr2">
+                    </div>
+                    <div class="r-imagen">
+                        <img class="min-r-img1" src="img/min-r-img1.webp" alt="">
+                    </div> 
+                </div>
+                <div class="min-r-new2">
+                    <div class="r-texto">
+                        <h3 class="min-r-sub">Fact-Checking Biden’s and Trump’s Claims About the Economy</h3>
+                        <span class="read">8 MIN READ</span> <hr class="right-hr2">
+                    </div>
+                    <div class="r-imagen">
+                        <img class="min-r-img1" src="img/min-r-img2.webp" alt="">
+                    </div> 
+                </div>
+                <div class="min-r-new3">
+                    <div class="r-texto">
+                        <h3 class="min-r-sub">Why Are My Parents Handling College Costs So Differently for My Sibling?</h3>
+                        <span class="read">4 MIN READ</span> <hr class="right-hr2">
+                    </div>
+                    <div class="r-imagen">
+                        <img class="min-r-img1" src="img/min-r-img3.webp" alt="">
+                    </div> 
+                </div>
+                <div class="min-r-new4">
+                    <div class="r-texto">
+                        <h3 class="min-r-sub">New ‘Detective Work’ on Butterfly Declines Reveals a Prime Suspect</h3>
+                        <span class="read">4 MIN READ</span> <hr class="right-hr2">
+                    </div>
+                    <div class="r-imagen">
+                        <img class="min-r-img1" src="img/min-r-img4.webp" alt="">
+                    </div> 
+                </div>
+                <div class="min-r-new5">
+                    <div class="r-texto">
+                        <h3 class="min-r-sub">A Surprising Way to Make Salmon Even Better</h3>
+                        <span class="read">3 MIN READ</span>
+                    </div>
+                    <div class="r-imagen">
+                        <img class="min-r-img1" src="img/min-r-img5.webp" alt="">
+                    </div> 
+                </div>
+            </div>
+        </div> 
+        <div class="news2">
+            <div class="left-side left-side2">
+                <span class="opinion">More News</span>
+                <div class="new1 raya">
+                    <h2 class="subt">
+                        U.S. Officials Pushed to Remove Age Limits for Trans Surgery, Documents Show
+                    </h2>
+                    <p class="parra">
+                        Emails indicate that Biden administration health officials lobbied to remove age minimums for surgery in minors because of concerns over political fallout.
+                    </p>
+                    <span class="read">5 MIN READ</span> 
+                </div>
+                <div class="new2 raya">
+                    <h2 class="subt">
+                        How Venezuela’s Leader Could Stay in Power, No Matter What Voters Want
+                    </h2>
+                    <p class="parra">
+                        Former officials in the government of President Nicolás Maduro describe his options between now and an election that could remove him — or solidify his grip.
+                    </p>
+                    <span class="read">6 MIN READ</span> 
+                </div>
+                <span class="live">LIVE</span>
+                <span class="live2">1h ago</span>
+                <div class="new3">
+                    <h2 class="subt">
+                        Argentina Faces Chile in Copa América Match
+                    </h2>
+                    <p class="parra">
+                        Lionel Messi and Argentina look to defend their title against Chile at a sold-out MetLife Stadium in New Jersey.
+                    </p>
+                    <span class="read">FROM THE ATHLETIC</span> 
+                </div>
+            </div>
+            <div class="center center2">
+                <div class="img1">
+                    <img src="img/img10.webp" alt=""> <br>
+                    <span class="creditos">Paul Sequeira, via Michael Ochs Archives/Getty Images</span>   
+                </div> 
+                <div class="new1 newl">
+                    <h2 class="subt">
+                        Kinky Friedman, Musician and Humorist Who Slew Sacred Cows, Dies at 79
+                    </h2>
+                    <p class="parra"> 
+                        He and his band, the Texas Jewboys, won acclaim for their satirical takes on American culture. He later wrote detective novels and ran for Texas governor.
+                    </p>
+                    <span class="read">7 MIN READ</span>
+                </div>
+            </div>
+            <div class="left-side right-side2">
+                <div class="new1 newl1 raya">
+                    <h2 class="subti">
+                        Uber and Lyft Agree to Give Massachusetts Drivers Minimum Pay
+                    </h2>
+                    <span class="read">2 MIN READ</span>
+                </div>
+                <div class="new1 newl2 raya">
+                    <h2 class="subti">
+                        At Yellowstone, a Rare White Buffalo Calf Arrives With a Message
+                    </h2>
+                    <span class="read">4 MIN READ</span>
+                </div>
+                <div class="new1 raya">
+                    <h2 class="subti">
+                        After Travel Meltdowns, Amtrak and N.J. Transit Offer Plan to Fix Mess
+                    </h2>
+                    <span class="read">3 MIN READ</span>
+                </div>
+                <div class="new1 raya">
+                    <h2 class="subti">
+                        Jamie Kellner, TV Executive Who Started Fox and WB, Dies at 77
+                    </h2>
+                    <span class="read">4 MIN READ</span>
+                </div>
+                <div class="new1 raya">
+                    <h2 class="subti">
+                        European Leaders Name Top E.U. Officials, Opting for Stability
+                    </h2>
+                    <span class="read">5 MIN READ</span>
+                </div>
+                <div class="new1">
+                    <h2 class="subti">
+                        Killer Mike Won’t Face Charges After Grammys Arrest
+                    </h2>
+                    <span class="read">1 MIN READ</span>
+                </div>
+            </div>
+        </div> <hr>
+        <div class="sports">
+            <div class="left-side column1">
+                <span class="span1">The Athletic</span> <span class="span2"><i>Sports coverage</i></span>
+                <div class="new1 raya">
+                    <h2 class="subt">
+                        The Dirtiest Game in the History of the Euros
+                    </h2>
+                    <p class="parra">
+                        Sixteen yellow cards and two players sent off: This is how one soccer game descended into chaos.
+                    </p>
+                </div>
+                <div class="new1">
+                    <h2 class="subt">
+                        Euro 2024 Has a Beer Problem. Or Rather, a Beer Cup Problem.
+                    </h2>
+                    <p class="parra">
+                        If one image symbolizes Euro 2024 so far it is the beer cup.
+                    </p> 
+                </div>
+            </div>
+            <div class="column2">
+                <img src="img/sport.webp" alt=""> <br>
+                <span class="creditos">Christophe Simon/AFP via Getty Images</span>
+            </div>
+            <div class="left-side column3">
+                <div class="new1">
+                    <h2 class="subt">
+                        Why Cristiano Ronaldo Is Raging
+                    </h2>
+                    <p class="parra">
+                        Portugal’s star is having a Euros to forget.
+                    </p> 
+                </div>
+            </div>
+            <div class="left-side column4">
+                <div class="new1 raya">
+                    <h2 class="subt">
+                        Speedo Unveils New Team U.S.A. Swim Suits Ahead of Olympics
+                    </h2>
+                </div>
+                <div class="new1 raya">
+                    <h2 class="subt">
+                        Why Fox’s Euro 2024 Coverage Is So Polarizing
+                    </h2>
+                </div>
+                <div class="new1">
+                    <h2 class="subt">
+                        N.F.L. Player Randall Cobb and His Family Are Safe After Escaping House Fire
+                    </h2>
+                </div>
+            </div>
+        </div> <hr>
+    </div>
+    <hr>
+        <div class="well">Well</div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="imagenes/noticia1.jpg">
+                <p>in Knots? Here's  How to</p>
+                <p>Loosen Them up.</p>
+                <span>4 MIN READ</span>
+            </div>
+            <div class="grid-item" >
+                <img src="imagenes/noticia2.jpg">
+                <p>Is It Healthier to Eat Your</p>
+                <p>Vegetables Before Your Carbs?</p>
+                <span>3 MIN READ</span>
+            </div>
+            <div class="grid-item">
+                <img src="imagenes/noticia3.jpg">
+                <p>How Ozempic Is Changing</p> 
+                <p>Diabetes Treatment</p>
+                <span>5 MIN READ</span>
+            </div>
+            <div class="grid-item">
+                <img src="imagenes/noticia4.jpg">
+                <p>When It's Time for an Aging Driver to</p>
+                <p>How to Hit the Brakes<p>
+                <span>3 MIN READ</span>
+                </div>
+            <div class="grid-item">
+                <img src="imagenes/noticia5.jpg">
+                <p>Tight on Time? How to Make</p>
+                <p>The Most of a Short Workout</p>
+                <span>4 MIN READ</span>
+            </div>
+        </div>
+    <hr>
+    <div class="grid-container2">
+        <div class="main-item">
+            <img src="imagenes/bigimagen.jpg">
+            <h2>My First Trip to Norway, With A.I. as a Guide</h2>
+            <p>Can artificial intelligence devise a vacation that covers culture, nature, hotels, and transportation? Our reporter put three virtual assistants to the test.</p>
+            <p><strong>7 MIN READ</strong></p>
+        </div>
+        <div class="item">
+            <div class="grid-item2">
+                <h3>Where to Get the Most Bang for Your Buck</h3>
+                <p>American travelers will find their money buys more in some unexpected countries.</p>
+                <p><strong>5 MIN READ</strong></p>
+                <img src="imagenes/imagn2.jpg">
+            </div>
+            <div class="grid-item2">
+                <h3>6 American Beaches to Love This Summer</h3>
+                <p>From Hawaii to Rhode Island, here’s where to enjoy some hard-earned R & R.</p>
+                <p><strong>3 MIN READ</strong></p>
+                <img src="imagenes/imagn3.jpg">
+            </div>
+            <div class="grid-item2">
+                <h3>Try This Full-Body Pool Workout</h3>
+                <p>This aquatic routine is easy on the joints and is a fun alternative to the gym.</p>
+                <p><strong>5 MIN READ</strong></p>
+                <img src="imagenes/art4.jpg">
+            </div>
+        </div>
+    </div>
+        <hr>
+            <div class="audio">Audio Podcasts and narrated articles</div>
+            <div class="grid-container3">
+                <div class="grid-item3">
+                    <img src="imagenes/img1audio.jpg">
+                    <p>Inside Reese Witherspoon's Literary Empire</p>
+                    <span>REPORTER READS</span>
+                    <div class="listen">15 MIN LISTEN</div>
+                </div>
+                <div class="grid-item3">
+                    <img src="imagenes/img2audio.jpg">
+                    <p>The Mamas & the Papas Star Deserves a New Legacy</p>
+                    <span>REPORTER READS</span>
+                    <div class="listen">23 MIN LISTEN</div>
+                </div>
+                <div class="grid-item3">
+                    <img src="imagenes/img3audio.jpg">
+                    <p>This Scientist Has an Antidote to Climate Delusions</p>
+                    <span>THE INTERVIEW</span>
+                    <div class="listen">30 MIN LISTEN</div>
+                </div>
+                <div class="grid-item3">
+                    <img src="imagenes/img4audio.jpg">
+                    <p>OpenAI's Flirty New Chatbot</p>
+                    <span>HARD FORK</span>
+                <div class="listen">68 MIN LISTEN</div>
+                </div>
+            </div>
 
+    <div class="games">
+        <h2>Games</h2>
+        Daily puzzles
+    </div>
+    <div class="games-container">
+    <div class="game-item">
+    <img src="imagenes/juego1.jpg">
+            <div class="game-info">
+                <span class="game-title">Wordle</span>
+                <span class="game-description">Guess the 5-letter word with 6 chances.</span>
+        </div>
+    </div>
+  
+  <div class="game-item">
+    <img src="imagenes/juego2.jpg">
+    <div class="game-info">
+      <span class="game-title">Strands</span>
+      <span class="game-description">Uncover hidden words and reveal the theme.</span>
+    </div>
+  </div>
+  
+  <div class="game-item">
+    <img src="imagenes/juego3.jpg">
+    <div class="game-info">
+      <span class="game-title">Connections</span>
+      <span class="game-description">Group words that share a common thread.</span>
+    </div>
+  </div>
+  
+  <div class="game-item">
+    <img src="imagenes/juego4.jpg">
+    <div class="game-info">
+      <span class="game-title">Connections Companion</span>
+      <span class="game-description">In case you need some puzzle help.</span>
+    </div>
+  </div>
+  
+  <div class="game-item">
+    <img src="imagenes/juego5.jpg">
+    <div class="game-info">
+      <span class="game-title">Spelling Bee</span>
+      <span class="game-description">How many words can you make with 7 letters?</span>
+    </div>
+  </div>
+  
+  <div class="game-item">
+    <img src="imagenes/juego6.jpg">
+    <div class="game-info">
+      <span class="game-title">The Crossword</span>
+      <span class="game-description">Get clued in with wordplay, every day.</span>
+    </div>
+  </div>
+</div>
 
-
-
-
-
-    </section>
+            <div class="News">News</div>
+            <div class="grid-container5">
+                <div class="grid-item5">
+                    <p>World News</p>
+                    <img src="imagenes/new1.jpg">
+                    <span>
+                        <p>In Rafah, We Saw Destruction and the Limits of Israel’s Gaza Strategy</p>
+                        <p>Damaged and destroyed buildings in the Tal al-Sultan neighborhood of Rafah, a city in the southern Gaza Strip, as seen while on an embed with the Israeli military.</p>
+                        <p>After 9 Months of War, Israelis Call for a Cease-Fire Deal and Elections</p>
+                        Turnout Is High as France’s Snap Election Enters Its Final Hours</span>
+                </div>
+                <div class="grid-item5">
+                    <p>U.S News</p>
+                    <img src="imagenes/new2.jpg">
+                    <span><p>As Democrats Fret About Biden, Murphy Says He Must Address Voters’ Concerns</p>
+                        <p>“Voters do have questions,” Senator Christopher S. Murphy said on Sunday.</p>
+                        <p>SpaceX’s Assault on a Fragile Habitat: Four Takeaways From Our Investigation</p>
+                        <p>Wildlife Protections Take a Back Seat to SpaceX’s Ambitions</p></span>
+                </div>
+                <div class="grid-item5">
+                    <p>U.S. Politics</p>
+                    <img src="imagenes/new3.jpg">
+                    <span>
+                        <p>SpaceX’s Assault on a Fragile Habitat: Four Takeaways From Our Investigation
+                        As Democrats Fret About Biden, Murphy Says He Must Address Voters’ Concerns</p>
+                        <p>Wildlife Protections Take a Back Seat to SpaceX’s Ambitions</p></span>
+                </div>
+                <div class="grid-item5">
+                    <p>New York</p>
+                    <img src="imagenes/new4.jpg">
+                    <span>
+                        <p>How a Last-Ditch Effort to Save Menendez From Prosecution Backfired
+                            The meeting between Senator Robert Menendez’s lawyer and federal prosecutors was a moment of great risk and potential peril for Mr. Menendez — and the effort failed.</p>
+                        The Sad State of Underground Retail in New York City
+                        ‘As I Stood There, a Bird Watcher in Full Regalia Paused Next to Me’</span>
+                </div>
+                <div class="grid-item5">
+                    <p>Business</p>
+                    <img src="imagenes/new5.jpg">
+                    <span>
+                        <p>New Plan to Target Russia’s Oil Revenue Brings Debate in White House
+                            The development of Russia’s shadow fleet of tankers and alternative forms of maritime insurance have allowed the Kremlin to continue generating robust revenues from oil exports, helping it to finance its war against Ukraine.</p>
+                        <p>Students Target Teachers in Group TikTok Attack, Shaking Their School
+                            For Some Young Couples, Saving on Rent Means Moving In Together Early</p></span>
+                </div>
+            </div>
+            
+            <div class="grid-container6">
+                <div class="grid-item6">
+                    <p>Technology</p>
+                    <img src="imagenes/thec1.jpg">
+                    <span>
+                        <p>Ray Kurzweil Still Says He Will Merge With A.I.</p>
+                        <p>Ray Kurzweil’s sequel to his 2005 book, “The Singularity Is Near,” is called “The Singularity Is Nearer.”</p>
+                            <p>A Hacker Stole OpenAI Secrets, Raising Fears That China Could, Too
+                                Investors Pour $27.1 Billion Into A.I. Start-Ups, Defying a Downturn.</p>
+                </div>
+                <div class="grid-item6">
+                    <p>Science</p>
+                    <img src="imagenes/thec2.jpg">
+                    <span>
+                        <p>This Bigheaded Fossil Turned Up in a Place No One Expected to Find It
+                            An artist’s life reconstruction of Gaiasia jennyae, an eight-foot salamander-like predator that lived 280 million years ago.</p>
+                        <p>Cosmic Research Hints at Mysterious Ancient Computer’s Purpose
+                            Trump Advisers Call for U.S. Nuclear Weapons Testing if He Is Elected</p></span>
+                </div>
+                <div class="grid-item6">
+                    <p>Sports</p>
+                    <img src="imagenes/thec3.jpg">
+                    <span>
+                       <p>The U.S. Men’s Soccer Coach Must Face His Failures
+                        <p>Andy Murray, a Benevolent Thorn in Tennis’ Side</p>
+                        <p>An N.F.L. Star Hit Rock Bottom at Rikers Island. Now, He’s a Different Person.</p></span>
+                </div>
+                <div class="grid-item6">
+                    <p>Obituaries</p>
+                    <img src="imagenes/thec4.jpg">
+                    <span>
+                    <p>Martin Stolar, Lawyer Who Fought for Social Justice, Dies at 81
+                        Martin Stolar outside the Brooklyn Federal Courthouse in 2006. He was defending a Pakistani immigrant accused of plotting to blow up the Herald Square subway station.</p>
+                    <p>Jon Landau, Producer of ‘Titanic’ and ‘Avatar,’ Dies at 63</p>
+                     <p>Stanley Moss, Poet Who Evoked a Troubled World, Dies at 99</p></span>
+                </div>
+                <div class="grid-item6">
+                    <p>The Upshot</p>
+                    <img src="imagenes/thec5.jpg">
+                    <span>
+                        <p>In Manhattan Real Estate, Cash Is Everything
+                            Flashback: Your Weekly History Quiz, July 6, 2024</p>
+                        <p>The Debate Hurt Biden, but the Real Shift Has Been Happening for Years</p></span>
+                </div>
+            </div>
+            <div class="grid-container6">
+                <div class="grid-item7">
+                    <p>Climate and Environment</p>
+                    <img src="imagenes/climate1.jpg">
+                    <span>
+                       <p>Can the Labour Party Bring Back Britain’s Green Groove?</p>
+                        <p>Drivers navigating an “ultra low emission zone” in London.</p>
+                        <p>How Future Hurricanes Could Stress Power Grids of U.S. Cities</p>
+                        <p>A Ban on Elephant Hunting Has Collapsed. Or Maybe It Never Existed.</p></span>
+                </div>
+                <div class="grid-item7">
+                    <p>Education</p>
+                    <img src="imagenes/climate2.jpg">
+                    <span>
+                        <p>Oklahoma’s State Superintendent Requires Public Schools to Teach the Bible
+                            Ryan Walters, Oklahoma’s state superintendent, at the State Capitol.</p>
+                        <p>Harvard Task Forces Find Climate of Bias for Both Jewish and Muslim Groups
+                            Why U.S. Schools Are Facing Their Biggest Budget Crunch in Years</p></span>
+                </div>
+                <div class="grid-item7">
+                    <p>Health</p>
+                    <img src="imagenes/climate3.jpg">
+                    <span>
+                        <p>Your Brain Holds Secrets. Scientists Want to Find Them.
+    
+                            Morrie Markoff, who died in June at the age of 110, with a piece of writing last year. His family donated his brain to NeuroBioBank.
+                            The first vaccine for malaria received major regulatory approval in 2015.
+                            
+                            Turning 26 and Struggling to Find Health Insurance? Tell Us About It.</p></span>
+                </div>
+                <div class="grid-item7">
+                    <p>Reader Center</p>
+                    <img src="imagenes/climate4.jpg">
+                    <span>
+                        <p>On ‘Hard Fork,’ a Hard Look at the Future of Technology
+                            “Hard Fork” is hosted by Kevin Roose, left, and Casey Newton, who began the podcast in October 2022.
+                            My Unlikely Path From Jail to Journalism</p>
+                        <p>With Unusual Stories, He Finds a Curious Audience</p></span>
+                </div>
+                <div class="grid-item7">
+                    <p>Explore Times Events</p>
+                    <img src="imagenes/climate5.jpg">
+                    <span>
+                        <p>Christian Cooper and Amy Tan on How Birding Brings Them Joy</p>
+                        <p>N.Y. State Sues JBS, the Brazilian Beef Giant, Over Its Climate Claims
+                        Sign Up for Upcoming Events</p></span>
+                </div>
+            </div>
+            </div>
+            <div class="opinion">Opinion</div>
+            <div class="grid-container8">
+                <div class="grid-item8">
+                    <p>Opinion</p>
+                    <img src="imagenes/opinion1.jpg">
+                    <span>
+                        <p>Party Time: Dos, Don’ts and So-Whats
+                            Jim Clyburn Is Right About What Democrats Should Do Next</p>
+                        <p>What Happened to the Originalism of the Originalists?</p></span>
+                </div>
+                <div class="grid-item8">
+                    <p>Opinion Comunists</p>
+                    <img src="imagenes/opinion2.jpg">
+                    <span><p>What Happened to the Originalism of the Originalists?</p>
+                        <p>Joe Biden’s Blind Spot
+                            Meet the Followers of Martin Luther King Jr. in the West Bank</p>
+                        </span>
+                </div>
+                <div class="grid-item8">
+                    <p>Editorials</p>
+                    <img src="imagenes/opinion3.jpg">
+                    <span>
+                        <p>NATO Has to Change. Here’s How.</p>
+                        <p>SpaceX’s Assault on a Fragile Habitat: Four Takeaways From Our Investigation
+                        As Democrats Fret About Biden, Murphy Says He Must Address Voters’ Concerns</p>
+                        <p>Wildlife Protections Take a Back Seat to SpaceX’s Ambitions</p></span>
+                </div>
+                <div class="grid-item8">
+                    <p>Guest Essays</p>
+                    <img src="imagenes/opinion4.jpg">
+                    <span>
+                        <p>All the Alzheimer’s Research We Didn’t Do
+                            Women Are Reaching New Heights in Climbing but Still Face Old Obstacles</p>
+                        <p>To Save Life on Earth, Bring Back Taxonomy</p></span>
+                </div>
+                <div class="grid-item8">
+                    <p>Sunday Opinion</p>
+                    <img src="imagenes/opinion5.jpg">
+                    <span>
+                        <p>Welcome to Stucktopia
+                            Keep Political Beliefs Out of Medical Care?</p>
+                        <p>The Struggles of President Biden and the Truth About Aging</p></span>
+                </div>
+            </div>
+            <div class="art">Art</div>
+            <div class="grid-container9">
+                <div class="grid-item9">
+                    <p>Opinion</p>
+                    <img src="imagenes/art1.jpg">
+                    <span>
+                        <p>The Composer Who Changed Opera With ‘a Beautiful Simplicity’
+                            The soprano Corinne Winters plays Iphigenia in both parts of Dmitri Tcherniakov’s double-bill of Gluck’s “Iphigénie” operas at the Aix-en-Provence Festival.
+                            Mia Goth on Reaching the End of the ‘X’ Trilogy</p>
+                        <p>The Tennis Podcast That Champions, and Hosts, Black Pros</p></span>
+                </div>
+                <div class="grid-item9">
+                    <p>Opinion Comunists</p>
+                    <img src="imagenes/art2.jpg">
+                    <span><p>A Masterpiece of Fiction Inspires the Urge to Submerge in a Gallery Crawl</p>
+                        <p>The Dazzling Artistry of Hiroshige’s ‘100 Famous Views of Edo’
+                            Why Can’t New York Make a Proper Monument to Gay History?</p>
+                        </span>
+                </div>
+                <div class="grid-item9">
+                    <p>Editorials</p>
+                    <img src="imagenes/art3.jpg">
+                    <span>
+                        <p>Mia Goth on Reaching the End of the ‘X’ Trilogy</p>
+                        <p>Ti West Is Turning Hollywood Into a Horror Show</p>
+                        <p>This Service Cat Has a Big Job: The Apocalypse</p></span>
+                </div>
+                <div class="grid-item9">
+                    <p>Guest Essays</p>
+                    <img src="imagenes/art4.jpg">
+                    <span>
+                        <p>‘The Bear’ Season 3: Tastes Great, Less Fulfilling
+                            From left, Ebon Moss-Bachrach, Ayo Edebiri and Jeremy Allen White in the new season of “The Bear,” streaming on Hulu.
+                            ‘Prosper’ Is a Juicy Megachurch Drama</p>
+                        <p>‘Interview With the Vampire’: Ben Daniels on That Bloody Season 2 Finale</p></span>
+                </div>
+                <div class="grid-item9">
+                    <p>Sunday Opinion</p>
+                    <img src="imagenes/art5.jpg">
+                    <span>
+                        <p>The Booty-Shaking Anthem That Still Endures, 25 Years Later
+                            The rapper Juvenile in 1999, the year his biggest hit took hold.
+                            The Composer Who Changed Opera With ‘a Beautiful Simplicity’</p>
+                        <p>Why We Still Want to Hear the ‘Ode to Joy,’ 200 Years Later</p></span>
+                </div>
+            </div>
+            <div class="grid-container10">
+                <div class="grid-item10">
+                    <p>Theater</p>
+                    <img src="imagenes/teatro.jpg">
+                    <span>
+                        <p>15 Summer Theaters for That Nearby, Out-of-Town Experience
+                            A scene from “La Cage Aux Folles” at the Barrington Stage Company.
+                            Brooke Shields Has Worn Many Hats. Now She’s a Labor Boss.</p>
+                        <p>Shay Youngblood, Influential Author and Playwright, Dies at 64</p></span>
+                </div>
+                <div class="grid-item10">
+                    <p>Dance</p>
+                    <img src="imagenes/teatro2.jpg">
+                    <span><p>Success Eluded Him in Dance. Then Came Gymnastics and Simone Biles.</p>
+                        <p>At American Ballet Theater, a New Swan Takes Flight
+                            A New Principal Takes Her Bow at American Ballet Theater</p>
+                        </span>
+                </div>
+                <div class="grid-item10">
+                    <p>Book Review</p>
+                    <img src="imagenes/teatro3.jpg">
+                    <span>
+                        <p>Romance Bookstores Are Booming, Dishing ‘All the Hot Stuff You Can Imagine’</p>
+                        <p>When a Father Gets Kidnapped, His Family Pays the Price</p>
+                        <p>Beach Reads That Stand Up to Sand, Salt and SPF</p></span>
+                </div>
+            </div>
+            <div class="living">Living</div>
+            <div class="grid-container11">
+                <div class="grid-item11">
+                    <p>Style</p>
+                    <img src="imagenes/living1.jpg">
+                    <span>
+                        <p></p>
+                        <p>The Tennis Podcast That Champions, and Hosts, Black Pros</p></span>
+                </div>
+                <div class="grid-item11">
+                    <p>Food</p>
+                    <img src="imagenes/living2.jpg">
+                    <span><p>The Century-Long Saga of the Caesar Salad
+                        15 of Our Readers’ Favorite Pizza Places Around the World</p>
+                        <p>Competitive Eaters Are Just Like Us. Give or Take a Dozen Hot Dogs.</p>
+                        </span>
+                </div>
+                <div class="grid-item11">
+                    <p>Well</p>
+                    <img src="imagenes/living3.jpg">
+                    <span>
+                        <p>This May Be the Most Overlooked Covid Symptom</p>
+                        <p>Do You Really Need Sunscreen Every Day?</p>
+                        <p>Our Favorite Nutrition Takeaways From 2024, So Far</p></span>
+                </div>
+                <div class="grid-item11">
+                    <p>The New York Times Magazine</p>
+                    <img src="imagenes/living4.jpg">
+                    <span>
+                        <p>This May Be the Most Overlooked Covid Symptom
+                            Do You Really Need Sunscreen Every Day?</p>
+                        <p>Our Favorite Nutrition Takeaways From 2024, So Far</p></span>
+                </div>
+                <div class="grid-item11">
+                    <p>T Magazine</p>
+                    <img src="imagenes/living5.jpg">
+                    <span>
+                        <p>Jenna Lyons’s Favorite Beauty Products, From Eyeliner to Body Oil</p>
+                        <p>An Artist Who Turned Her Bedroom Closet Into a Safe Haven
+                        30 L.G.B.T.Q. Artists Look Back on the Pleasures and Pain of Being 30</p></span>
+                </div>
+            </div>
+            <div class="grid-container12">
+                <div class="grid-item12">
+                    <p>Travel</p>
+                    <img src="imagenes/living6.jpg">
+                    <span>
+                        <p>All the Adventure, a Fraction of the Cost: The D.I.Y. Orient Express</p>
+                        <p>High Above New York, a Battle for Tourist Dollars
+                            If You Test Positive for Covid, Can You Still Travel?</p></span>
+                </div>
+                <div class="grid-item12">
+                    <p>Love</p>
+                    <img src="imagenes/living7.jpg">
+                    <span><p>In Sync on the Ice and Off
+                        Evan Bates and Madison Chock, champion ice skating partners for the last 13 years, were married on June 20 at Lanikuhonua Cultural Institute, Oahu, Hawaii.
+                        Here’s How to Avoid Hating Your Wedding Photos</p>
+                        <p>Sparks Flew All Over the World</p>
+                        </span>
+                </div>
+                <div class="grid-item12">
+                    <p>Real Estate</p>
+                    <img src="imagenes/living8.jpg">
+                    <span>
+                        <p>The Simplest (and Cheapest) Way to Decorate With Flowers</p>
+                        <p>$600,000 Homes in Edinburgh</p>
+                        <p>Big Ticket: N.Y.’s Top Sales and Listings in June</p></span>
+                </div>
+            </div>
+    <header>
+                <h1>The New York Times</h1>
+            <div class="container13">
+                <div class="sections">
+                    <h3>NEWS</h3>
+                    <ul>
+                        <li>Home Page</li>
+                        <li>U.S.</li>
+                        <li>World</li>
+                        <li>Politics</li>
+                        <li>New York</li>
+                        <li>Education</li>
+                        <li>Sports</li>
+                        <li>Business</li>
+                        <li>Tech</li>
+                        <li>Science</li>
+                        <li>Weather</li>
+                        <li>The Great Read</li>
+                        <li>Obituaries</li>
+                        <li>Headway</li>
+                        <li>Visual Investigations</li>
+                        <li>The Magazine</li>
+                    </ul>
+                </div>
+                <div class="sections">
+                    <h3>ARTS</h3>
+                    <ul>
+                        <li>Books</li>
+                        <li>Best Sellers Book List</li>
+                        <li>Dance</li>
+                        <li>Movies</li>
+                        <li>Music</li>
+                        <li>Pop Culture</li>
+                        <li>Television</li>
+                        <li>Theater</li>
+                        <li>Visual Arts</li>
+                    </ul>
+                </div>
+                <div class="sections">
+                    <h3>LIFESTYLE</h3>
+                    <ul>
+                        <li>Health</li>
+                        <li>Well</li>
+                        <li>Food</li>
+                        <li>Restaurant Reviews</li>
+                        <li>Love</li>
+                        <li>Travel</li>
+                        <li>Style</li>
+                        <li>Fashion</li>
+                        <li>Real Estate</li>
+                        <li>T Magazine</li>
+                    </ul>
+                </div>
+                <div class="sections">
+                    <h3>OPINION</h3>
+                    <ul>
+                        <li>Today's Opinion</li>
+                        <li>Columnists</li>
+                        <li>Editorials</li>
+                        <li>Guest Essays</li>
+                        <li>Op-Docs</li>
+                        <li>Letters</li>
+                        <li>Sunday Opinion</li>
+                        <li>Opinion Video</li>
+                        <li>Opinion Audio</li>
+                    </ul>
+                </div>
+                <div class="sections">
+                    <h3>MORE</h3>
+                    <ul>
+                        <li>Audio</li>
+                        <li>Games</li>
+                        <li>Cooking</li>
+                        <li>Wirecutter</li>
+                        <li>The Athletic</li>
+                        <li>Jobs</li>
+                        <li>Video</li>
+                        <li>Graphics</li>
+                        <li>Trending</li>
+                        <li>Live Events</li>
+                        <li>Corrections</li>
+                        <li>Reader Center</li>
+                        <li>TimesMachine</li>
+                        <li>The Learning Network</li>
+                        <li>School of The NYT</li>
+                        <li>inEducation</li>
+                    </ul>
+                </div>
+                <div class="sections">
+                    <h3>ACCOUNT</h3>
+                    <ul>
+                        <li>Subscribe</li>
+                        <li>Manage My Account</li>
+                        <li>Home Delivery</li>
+                        <li>Gift Subscriptions</li>
+                        <li>Group Subscriptions</li>
+                        <li>Gift Articles</li>
+                        <li>Email Newsletters</li>
+                        <li>NYT Licensing</li>
+                        <li>Replica Edition</li>
+                        <li>Times Store</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
 </body>
 </html>
